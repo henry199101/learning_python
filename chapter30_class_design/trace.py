@@ -1,4 +1,4 @@
-class wrapper():
+class wrapper:
 	def __init__(self, object):
 		self.wrapped = object
 	def __getattr__(self, attrname):
