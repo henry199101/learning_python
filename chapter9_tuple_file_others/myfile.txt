@@ -1,1 +1,2 @@
-hello world!
+hello text file
+goodbye text file
