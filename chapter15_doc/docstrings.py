@@ -1,16 +1,16 @@
 """
-module documentation
-words go here
+Module documentation
+Words Go Here
 """
 
 spam = 40
 
 def square(x):
 	"""
-	function documentation
+	function documentatoin
 	can we have your liver then?
 	"""
-	return x ** 2
+	return x ** 2		# square
 
 class Employee:
 	"class documentation"
