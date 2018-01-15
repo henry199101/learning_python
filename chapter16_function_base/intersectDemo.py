@@ -1,5 +1,3 @@
-# intersectDemo.py
-
 def intersect(seq1, seq2):
 	res = []
 	for x in seq1:
@@ -9,4 +7,8 @@ def intersect(seq1, seq2):
 
 s1 = "SPAM"
 s2 = "SCAM"
-print intersect(s1, s2)
+print(intersect(s1, s2))
+
+print(intersect([1, 2, 3], (1, 4)))
+
+[x for x in s1 if x in s2]
