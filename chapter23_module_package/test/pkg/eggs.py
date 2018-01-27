@@ -1,3 +1,3 @@
-X = 99999
+X = 9999
 import string
 print(string)
