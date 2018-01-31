@@ -1,7 +1,7 @@
 from person import Person, Manager
-bob = Person('bob smith')
-sue = Person('sue jones', job='dev', pay=100000)
-tom = Manager('tom jones', 50000)
+bob = Person('Bob Smith')
+sue = Person('Sue Jones', job='dev', pay=100000)
+tom = Manager('Tom Jones', 50000)
 
 import shelve
 db = shelve.open('persondb')

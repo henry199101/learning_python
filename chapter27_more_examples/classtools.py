@@ -1,11 +1,20 @@
+# File classtools.py(new)
+"Assorted class utilities and tools"
 class AttrDisplay:
-	def gatherAttrs(self):
-		attrs = []
+	"""
+	Provides an inheritable print overload method that displays
+	instances with their class names and a name=value pair for
+	each attribute stored on the instance itself (but not attrs
+	inherited from its classes).Can be mixed into any class,
+	and will work on any instance.
+	"""
+	def gatherAttr(self):
+		attr = []
 		for key in sorted(self.__dict__):
-			attrs.append('%s=%s' % (key, getattr(self, key)))
-		return ', '.join(attrs)
+			attr.append('%s=%s' % (key, getattr(self, key)))
+		return ', '.join(attr)
 	def __str__(self):
-		return '[%s: %s]' % (self.__class__.__name__, self.gatherAttrs())
+		return '[%s: %s]' % (self.__class__.__name__, self.gatherAttr())
 
 if __name__ == '__main__':
 	class TopTest(AttrDisplay):
@@ -16,6 +25,7 @@ if __name__ == '__main__':
 			TopTest.count += 2
 	class SubTest(TopTest):
 		pass
+
 	X, Y = TopTest(), SubTest()
 	print(X)
 	print(Y)

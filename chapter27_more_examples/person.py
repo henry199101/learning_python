@@ -1,3 +1,5 @@
+# File person.py(final)
+
 from classtools import AttrDisplay
 
 class Person(AttrDisplay):
@@ -17,8 +19,8 @@ class Manager(Person):
 		Person.giveRaise(self, percent + bonus)
 
 if __name__ == '__main__':
-	bob = Person('bob smith')
-	sue = Person('sue jones', job='dev', pay=100000)
+	bob = Person('Bob Smith')
+	sue = Person('Sue Jones', job='dev', pay=100000)
 	print(bob)
 	print(sue)
 	print(bob.lastName(), sue.lastName())
