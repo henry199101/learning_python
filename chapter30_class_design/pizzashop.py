@@ -4,7 +4,7 @@ class Customer:
 	def __init__(self, name):
 		self.name = name
 	def order(self, server):
-		print(self.name,"orders from", server)
+		print(self.name, "orders from", server)
 	def pay(self, server):
 		print(self.name, "pays for item to", server)
 
@@ -26,7 +26,7 @@ class PizzaShop:
 		customer.pay(self.server)
 
 if __name__ == "__main__":
-	scene = PizzaRobot()
+	scene = PizzaShop()
 	scene.order('Homer')
 	print('...')
-	scene.order('Shanggy')
+	scene.order('Shaggy')
