@@ -25,7 +25,7 @@ except IndexError:
 else:
 	print('else run')
 finally:
-	print('finally run')
+	print('finally')
 print('after run')
 
 print(sep + 'EXCEPTION RAISED BUT NOT CAUGHT')
@@ -35,4 +35,4 @@ except IndexError:
 	print('except run')
 finally:
 	print('finally run')
-print('after run	')
+print('after run')
