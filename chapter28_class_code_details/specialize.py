@@ -3,6 +3,8 @@ class Super:
 		print('in Super.method')
 	def delegate(self):
 		self.action()
+	def action(self):
+		raise NotImplementedError('action must be defined!')
 
 class Inheritor(Super):
 	pass
@@ -25,6 +27,6 @@ if __name__ == '__main__':
 	for klass in (Inheritor, Replacer, Extender):
 		print('\n' + klass.__name__ + '...')
 		klass().method()
-		print('\nProvider...')
-		x = Provider()
-		x.delegate()
+	print('\nProvider...')
+	x = Provider()
+	x.delegate()
