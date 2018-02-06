@@ -10,4 +10,4 @@ def action1():
 try:
 	action1()
 except TypeError:
-	print('inner try')
+	print('outer try')
